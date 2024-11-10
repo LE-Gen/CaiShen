@@ -19,47 +19,25 @@
         }
 
         #circleImage {
-            width: 50vw; /* Responsive width based on viewport width */
-            max-width: 200px; /* Ensure it doesn't get too large on big screens */
+            width: 200px; /* Adjust the width as needed */
             height: auto;
         }
 
         #randomNumber {
-            position: absolute;
-            top: 48%;
-            left: 60%;
-            transform: translate(-55%, -70%) rotate(-14.5deg);
-            font-size: 6vw; /* Responsive font size */
-            max-font-size: 50px; /* Max font size to prevent being too large */
-            font-weight: bold;
-            color: red;
-            text-shadow: 
-                -2px -2px 0 white, 
-                 1px -1px 0 white, 
-                -1px  1px 0 white, 
-                 1px  1px 0 white,
-                 1px  1px 2px rgba(0, 0, 0, 0.7); /* Optional shadow for depth */
-        }
-
-        /* Media query for smaller screens */
-        @media (max-width: 600px) {
-            #randomNumber {
-                font-size: 8vw; /* Increase font size slightly on smaller screens */
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -70%) rotate(-14.5deg);
-            }
-        }
-
-        /* Media query for larger screens */
-        @media (min-width: 1024px) {
-            #circleImage {
-                width: 200px;
-            }
-            #randomNumber {
-                font-size: 50px;
-            }
-        }
+    position: absolute;
+    top: 48%;
+    left: 60%;
+    transform: translate(-55%, -70%) rotate(-14.5deg);
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 
+        -2px -2px 0 white, 
+         1px -1px 0 white, 
+        -1px  1px 0 white, 
+         1px  1px 0 white,
+         1px  1px 2px rgba(0, 0, 0, 0.7); /* Optional shadow for depth */
+}
     </style>
 </head>
 <body>
